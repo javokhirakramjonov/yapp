@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "667221937608",
+    "project_id": "yapp-1aef6",
+    "storage_bucket": "yapp-1aef6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:667221937608:android:8ee4f7fae68baf787884fd",
+        "android_client_info": {
+          "package_name": "com.example.yapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPKbQl-iAGVtHoDa1gqGGOboAu1kBG6A4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

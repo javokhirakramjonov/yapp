@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
+import 'package:yapp/generated/assets.dart';
 
 import 'screen_wrapper.dart';
 
@@ -9,7 +11,9 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SplashScreenWrapper(
       child: Scaffold(
-        body: SafeArea(child: Center(child: Text("Hello Yapp"))),
+        body: SafeArea(
+          child: Center(child: Lottie.asset(Assets.animationsLogo)),
+        ),
       ),
     );
   }
