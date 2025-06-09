@@ -3,4 +3,12 @@ class Assets {
   Assets._();
 
   static const String animationsLogo = 'assets/animations/logo.json';
+  static const String iconsChats = 'assets/icons/chats.svg';
+  static const String iconsChatsSelected = 'assets/icons/chats_selected.svg';
+  static const String iconsContacts = 'assets/icons/contacts.svg';
+  static const String iconsContactsSelected =
+      'assets/icons/contacts_selected.svg';
+  static const String iconsSettings = 'assets/icons/settings.svg';
+  static const String iconsSettingsSelected =
+      'assets/icons/settings_selected.svg';
 }

@@ -132,6 +132,6 @@ final ThemeData darkThemeData = ThemeData.dark().copyWith(
   extensions: <ThemeExtension<AppTheme>>[darkTheme],
 );
 
-extension on BuildContext {
+extension AppThemeExtension on BuildContext {
   AppTheme get appTheme => Theme.of(this).extension<AppTheme>()!;
 }
