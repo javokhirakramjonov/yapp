@@ -63,6 +63,9 @@ class DefaultFirebaseOptions {
     messagingSenderId: '667221937608',
     projectId: 'yapp-1aef6',
     storageBucket: 'yapp-1aef6.firebasestorage.app',
+    androidClientId: '667221937608-ljvuqla09qkjasb4meun7bg8dntocpk6.apps.googleusercontent.com',
+    iosClientId: '667221937608-04iq3n1co24ovr6j4g7800csmtl3kp7t.apps.googleusercontent.com',
     iosBundleId: 'com.example.yapp',
   );
+
 }
