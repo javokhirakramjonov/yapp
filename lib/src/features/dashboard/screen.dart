@@ -24,11 +24,13 @@ class _DashboardScreenState extends State<DashboardScreen> {
   Widget build(BuildContext context) {
     return DashboardScreenWrapper(
       child: Scaffold(
-        body: switch (currentPage) {
-          DashboardPage.chats => ChatsScreen(),
-          DashboardPage.contacts => ContactsScreen(),
-          DashboardPage.settings => SettingsScreen(),
-        },
+        body: SafeArea(
+          child: switch (currentPage) {
+            DashboardPage.chats => ChatsScreen(),
+            DashboardPage.contacts => ContactsScreen(),
+            DashboardPage.settings => SettingsScreen(),
+          },
+        ),
         bottomNavigationBar: BottomNavigationBar(
           selectedItemColor: context.appTheme.onPrimaryContainer,
           unselectedItemColor: context.appTheme.onSurface40,
