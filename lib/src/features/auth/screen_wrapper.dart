@@ -12,7 +12,7 @@ class AuthScreenWrapper extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => AuthScreenBloc(GetIt.I.get(), GetIt.I.get()),
+      create: (context) => AuthScreenBloc(GetIt.I.get()),
       child: child,
     );
   }
