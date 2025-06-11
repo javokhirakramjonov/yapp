@@ -11,6 +11,7 @@ class AppTheme extends ThemeExtension<AppTheme> {
   final Color onSurface20;
   final Color onSurface40;
   final Color onSurface60;
+  final Color chatMessageBackground;
 
   const AppTheme({
     required this.primary,
@@ -22,6 +23,7 @@ class AppTheme extends ThemeExtension<AppTheme> {
     required this.onSurface20,
     required this.onSurface40,
     required this.onSurface60,
+    required this.chatMessageBackground,
   });
 
   @override
@@ -35,6 +37,7 @@ class AppTheme extends ThemeExtension<AppTheme> {
     Color? onSurface20,
     Color? onSurface40,
     Color? onSurface60,
+    Color? chatMessageBackground,
   }) {
     return AppTheme(
       primary: primary ?? this.primary,
@@ -46,6 +49,8 @@ class AppTheme extends ThemeExtension<AppTheme> {
       onSurface20: onSurface20 ?? this.onSurface20,
       onSurface40: onSurface40 ?? this.onSurface40,
       onSurface60: onSurface60 ?? this.onSurface60,
+      chatMessageBackground:
+          chatMessageBackground ?? this.chatMessageBackground,
     );
   }
 
@@ -80,6 +85,11 @@ class AppTheme extends ThemeExtension<AppTheme> {
       onSurface20: Color.lerp(onSurface20, other.onSurface20, t)!,
       onSurface40: Color.lerp(onSurface40, other.onSurface40, t)!,
       onSurface60: Color.lerp(onSurface60, other.onSurface60, t)!,
+      chatMessageBackground: Color.lerp(
+        chatMessageBackground,
+        other.chatMessageBackground,
+        t,
+      )!,
     );
   }
 }
@@ -94,6 +104,7 @@ const AppTheme lightTheme = AppTheme(
   onSurface20: Color(0xFF001E2F),
   onSurface40: Color(0xFF44474E),
   onSurface60: Color(0xFF74777F),
+  chatMessageBackground: Colors.white,
 );
 
 const AppTheme darkTheme = AppTheme(
@@ -106,6 +117,7 @@ const AppTheme darkTheme = AppTheme(
   onSurface20: Color(0xFFE0F1FF),
   onSurface40: Color(0xFFBFC6DA),
   onSurface60: Color(0xFFA8ADBD),
+  chatMessageBackground: Color(0xFF1E2A32),
 );
 
 final ThemeData lightThemeData = ThemeData.light().copyWith(

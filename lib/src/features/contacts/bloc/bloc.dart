@@ -18,6 +18,10 @@ class ContactsScreenBloc
   ) async {
     final contacts = await _contactsRepository.getContacts();
 
+    contacts.sort((user1, user2) {
+      return user1.name.toLowerCase().compareTo(user2.name.toLowerCase());
+    });
+
     emit(state.copyWith(contacts: contacts));
   }
 }

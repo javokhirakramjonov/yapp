@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:yapp/src/features/auth/injections.dart';
+import 'package:yapp/src/features/chat/injections.dart';
 import 'package:yapp/src/features/contacts/injections.dart';
 
 Future<void> setupDependencies() async {
@@ -12,4 +13,5 @@ Future<void> setupDependencies() async {
 
   setupAuthScreenDependencies();
   initContactsScreenDependencies();
+  initChatScreenDependencies();
 }

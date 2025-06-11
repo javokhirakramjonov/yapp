@@ -34,8 +34,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
         bottomNavigationBar: BottomNavigationBar(
           selectedItemColor: context.appTheme.onPrimaryContainer,
           unselectedItemColor: context.appTheme.onSurface40,
-          selectedLabelStyle: AppFont.labelMedium,
-          unselectedLabelStyle: AppFont.labelMedium,
+          selectedLabelStyle: AppFont.style16W500,
+          unselectedLabelStyle: AppFont.style16W500,
           items: [
             BottomNavigationBarItem(
               activeIcon: SvgPicture.asset(Assets.iconsChatsSelected),
